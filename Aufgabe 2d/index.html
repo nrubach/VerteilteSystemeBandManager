@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bandmanager Demo</title>
+  </head>
+  <body>
+    <script src="bandmanager_aufruf.js" charset="utf-8"></script><br/>
+    Mit Hilfe dieser Seite können einige Demofunktionen des Bandmanagers abegrufen werden. Die Angezeigten JSON Objekte werden zusätzlich in der Entwicklerkonsole (F12) des Browsers ausgegeben.<br/>
+	  Damit diese Demo funktioniert muss die Spring Boot Anwendung aus 2c) auf dem localhost unter Port 8080 aktiv sein. (Wird keine Response angezeigt ist die Spring Anwendung vermutlich nicht aktiv oder falsch eingerichtet.)<br>
+	  <button type="button" id="rootBtn">Show Root</button><br/>
+    <button type="button" id="bandsBtn">Show Bands</button><br/>
+    <button type="button" id="musiciansBtn">Show Musicians</button><br/>
+    <button type="button" id="firstMusicianBtn">Show first Musician</button><br/>
+    Show Musicians of Band with ID: <input type="number" id="bandid"><button type="button" id="bandmusicians">Show</button><br/>
+    JSON Response: <br/>
+	<pre id="resultbox">
+    </pre>
+  </body>
+</html>
